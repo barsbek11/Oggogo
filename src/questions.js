@@ -7,7 +7,7 @@ export const allQuestions = [
    'Язык стилей...', 
    'Редактор кода...', 
   ], 
-  isTrue: 1, 
+  isTrue: 2, 
  }, 
  
  { 
@@ -18,7 +18,7 @@ export const allQuestions = [
    'Язык стилей...', 
    'Не вкурсе...', 
   ], 
-  isTrue: 2, 
+  isTrue: 3, 
  }, 
  { 
   title: 'Что такое JavaSript?', 
@@ -28,7 +28,7 @@ export const allQuestions = [
    'Язык стилей...', 
    'Не вкурсе...', 
   ], 
-  isTrue: 3, 
+  isTrue: 1, 
  }, 
  { 
   title: 'Что такое GraphQL?', 

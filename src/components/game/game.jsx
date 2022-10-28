@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { allQuestions } from '../../questions'
 import './game.scss'
 
-export const Game = ({ isDoneGame, setCorrectApp, correctyApp }) => {
+export const Game = ({ isDoneGame, correctlyApp, setCorrectApp }) => {
 	const [step, setStep] = useState(0)
 	const question = allQuestions[step]
 
@@ -10,7 +10,7 @@ export const Game = ({ isDoneGame, setCorrectApp, correctyApp }) => {
 		setStep(step + 1)
 		isDoneGame()
 		if (i === allQuestions[step].isTrue) {
-			setCorrectApp(correctyApp + 1)
+			setCorrectApp(correctlyApp + 1)
 		}
 	}
 

@@ -1,6 +1,6 @@
-import {Game} from './components/game/game'
-import {ResultGame} from './components/resultGame/resultGame'
 import { useState } from 'react'
+import { Game } from './components/game/game'
+import { ResultGame } from './components/resultGame/resultGame'
 import { allQuestions } from './questions'
 
 const App = () => {
@@ -10,10 +10,20 @@ const App = () => {
   const isDoneGame = () => {
     setDoneGame(doneGame + 1)
   }
+
   return (
     <div className='app'>
-      {doneGame !== allQuestions.length ? (<Game isDoneGame={isDoneGame} correctlyApp={correctlyApp} setCorrectApp={setCorrectApp} /> ) : (<ResultGame correctlyApp={correctlyApp}/>)}
+      {doneGame !== allQuestions.length ? (
+        <Game
+          isDoneGame={isDoneGame}
+          correctlyApp={correctlyApp}
+          setCorrectApp={setCorrectApp}
+        />
+      ) : (
+        <ResultGame correctlyApp={correctlyApp} />
+      )}
     </div>
   )
 }
+
 export default App

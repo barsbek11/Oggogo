@@ -1,16 +1,20 @@
 import './resultGame.scss'
-export const ResultGame = () => {
+
+export const ResultGame = ({ correctlyApp }) => {
 	return (
-		<div className='result-wrapper'>
+		<div className='resultWrapper'>
 			<img
-				src='https://media.giphy.com/media/zhS4PEVVuFnbG718kV/giphy.gif'
-				alt='done'
+				src='https://media.giphy.com/media/THgpQqlwPseLk1w2pB/giphy.gif'
+				alt='Done'
 			/>
 			<h3>
-				вы ответили правельно на <strong style={{ color: 'rgb' }}>3</strong> из{' '}
+				Вы ответили првильно на{' '}
+				<strong style={{ color: 'rgb(65, 230, 40)' }}>{correctlyApp}</strong> из{' '}
 				<strong>5</strong> вопросов
 			</h3>
-			<button>Пройти тест заново</button>
+			<button>
+				<a href='/'>Играть</a>
+			</button>
 		</div>
 	)
 }
